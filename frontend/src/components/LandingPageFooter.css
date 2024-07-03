@@ -1,0 +1,20 @@
+.landing-footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #000000; /* Match background color */
+  color: #ffffff; /* White text */
+}
+
+.learn-more-link {
+  color: #ffffff; /* White text */
+  font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  display: inline-block;
+  transition: color 0.3s ease-in-out;
+}
+
+.learn-more-link:hover {
+  color: #cccccc; /* Slightly lighter color on hover */
+}
