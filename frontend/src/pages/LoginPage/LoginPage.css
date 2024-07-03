@@ -1,0 +1,119 @@
+.login-page {
+    background-color: #000000; /* Pitch black */
+    color: #ffffff; /* White text */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .login-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .left-half, .right-half {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .left-half {
+    flex-direction: column;
+  }
+  
+  .left-half form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input-field {
+    margin: 10px 0;
+    padding: 15px;
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #fff;
+    border-radius: 25px; /* Rounded corners */
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .input-field::placeholder {
+    color: #fff; /* White text */
+  }
+  
+  .forgot-password {
+    margin: 10px 0;
+    text-align: right;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .forgot-password a {
+    color: #fff; /* White text */
+    text-decoration: none;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  
+  .button-81 {
+    background-color: #fff;
+    border: 0 solid #e2e8f0;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: #0d172a;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 1rem 1.6rem;
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    text-decoration-thickness: auto;
+    transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-81:hover {
+    background-color: #1e293b;
+    color: #fff;
+  }
+  
+  @media (min-width: 768px) {
+    .button-81 {
+      font-size: 1.125rem;
+      padding: 1rem 2rem;
+    }
+  }
+  
+  .image-gallery-slide img {
+    width: auto;
+    height: auto;
+    max-width: 70%; /* Adjust size as needed */
+    max-height: 300px; /* Adjust size as needed */
+  }
+  
+  .text-slideshow {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    width: 100%;
+    text-align: center;
+  }
+  
+  .text-slide {
+    color: #ffffff; /* White text */
+    font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  

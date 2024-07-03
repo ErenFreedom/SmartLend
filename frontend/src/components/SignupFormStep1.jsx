@@ -1,9 +1,15 @@
 import React from 'react';
+import 'react-phone-input-2/lib/style.css';
+import PhoneInput from 'react-phone-input-2';
 import './SignupFormSteps.css';
 
 const SignupFormStep1 = ({ formData, setFormData }) => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handlePhoneChange = (value, country) => {
+    setFormData({ ...formData, phoneNumber: value, countryCode: country.dialCode });
   };
 
   return (
@@ -44,12 +50,22 @@ const SignupFormStep1 = ({ formData, setFormData }) => {
         value={formData.confirmPassword}
         onChange={handleChange}
       />
-      <input
-        type="tel"
-        name="phoneNumber"
-        placeholder="Phone Number"
+      <PhoneInput
+        country={'us'}
         value={formData.phoneNumber}
-        onChange={handleChange}
+        onChange={handlePhoneChange}
+        containerStyle={{ width: '100%', maxWidth: '600px', margin: '10px 0' }}
+        inputStyle={{
+          width: '100%',
+          maxWidth: '600px',
+          height: '50px',
+          borderRadius: '25px',
+          backgroundColor: '#000',
+          color: '#fff',
+          border: '1px solid #fff',
+        }}
+        buttonStyle={{ backgroundColor: '#000', border: '1px solid #fff' }}
+        dropdownStyle={{ backgroundColor: '#000', color: '#fff' }}
       />
       <input
         type="date"
@@ -60,7 +76,7 @@ const SignupFormStep1 = ({ formData, setFormData }) => {
       />
 
       <h2>User Role Selection</h2>
-      <select name="userRole" value={formData.userRole} onChange={handleChange} className="custom-dropdown">
+      <select name="userRole" value={formData.userRole} onChange={handleChange}>
         <option value="" disabled>Select Role</option>
         <option value="lender">Register as Lender</option>
         <option value="borrower">Register as Borrower</option>

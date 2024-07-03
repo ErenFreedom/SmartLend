@@ -1,0 +1,74 @@
+.lender-dashboard-header {
+    background-color: #000000; /* Pitch black */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .lender-dashboard-header .logo a {
+    text-decoration: none;
+    color: #fff; /* White text */
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .lender-dashboard-header .header-buttons {
+    display: flex;
+    gap: 40px; /* Adjust the gap as needed */
+    align-items: center;
+  }
+  
+  .lender-dashboard-header .header-button {
+    background-color: #fff;
+    border: 0 solid #e2e8f0;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: #0d172a;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 1rem 1.6rem;
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    text-decoration-thickness: auto;
+    transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .lender-dashboard-header .header-button:hover {
+    background-color: #1e293b;
+    color: #fff;
+  }
+  
+  .lender-dashboard-header .bell-icon {
+    color: #fff; /* White color */
+    font-size: 1.5rem; /* Adjust size as needed */
+    cursor: pointer;
+  }
+  
+  .lender-dashboard-header .profile-pic {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    border-radius: 50%;
+    background-color: #ffffff; /* Placeholder color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px; /* Adjust spacing as needed */
+  }
+  
+  @media (min-width: 768px) {
+    .lender-dashboard-header .header-button {
+      font-size: 1.125rem;
+      padding: 1rem 2rem;
+    }
+  }
+  

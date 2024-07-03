@@ -1,0 +1,16 @@
+/* src/pages/BorrowerDashboard/BorrowerDashboard.css */
+
+.borrower-dashboard {
+    background-color: #000000; /* Pitch black */
+    color: #ffffff; /* White text */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .dashboard-content {
+    flex: 1;
+    padding: 20px;
+  }
+  

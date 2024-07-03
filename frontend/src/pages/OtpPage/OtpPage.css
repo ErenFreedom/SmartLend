@@ -1,0 +1,63 @@
+.otp-page {
+    background-color: #000000; /* Pitch black */
+    color: #ffffff; /* White text */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .otp-container {
+    text-align: center;
+  }
+  
+  .otp-container h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem; /* Increased font size */
+  }
+  
+  .otp-container p {
+    margin-bottom: 10px;
+  }
+  
+  .otp-inputs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .otp-field {
+    width: 60px; /* Increased width */
+    height: 60px; /* Increased height */
+    margin: 0 5px;
+    font-size: 24px; /* Increased font size */
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 10px; /* Increased border radius */
+    background-color: #000000; /* Pitch black */
+    color: #ffffff; /* White text */
+  }
+  
+  .resend-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .resend-button, .verify-button {
+    background-color: #ffffff;
+    color: #0d172a;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px; /* Add margin for spacing */
+  }
+  
+  .resend-button:hover, .verify-button:hover {
+    background-color: #1e293b;
+    color: #ffffff;
+  }
+  
